@@ -3,6 +3,7 @@ import React from "react";
 import styled from "styled-components";
 import Navbar from "./Navbar";
 import resume from "../resume";
+import Socials from "./Socials";
 
 const Home = () => {
   return (
@@ -13,37 +14,7 @@ const Home = () => {
         <Headline>I'm {resume.name}</Headline>
         <AboutMe>{resume.description}</AboutMe>
 
-        <Socials>
-          <a
-            target={"_blank"}
-            href={resume.socials.linkedIn.href}
-            rel="noreferrer"
-          >
-            {resume.socials.linkedIn.icon}
-          </a>
-
-          <a
-            target={"_blank"}
-            href={resume.socials.twitter.href}
-            rel="noreferrer"
-          >
-            {resume.socials.twitter.icon}
-          </a>
-          <a
-            target={"_blank"}
-            href={resume.socials.instagram.href}
-            rel="noreferrer"
-          >
-            {resume.socials.instagram.icon}
-          </a>
-          <a
-            target={"_blank"}
-            href={resume.socials.github.href}
-            rel="noreferrer"
-          >
-            {resume.socials.github.icon}
-          </a>
-        </Socials>
+        <Socials />
       </Content>
     </Container>
   );
@@ -68,7 +39,6 @@ const Content = styled.div`
   height: 40vh;
   width: 60%;
   margin: auto;
-  // background-color: red;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -81,19 +51,4 @@ const AboutMe = styled.p`
   font-size: 2rem;
   text-align: center;
   margin-top: 16px;
-`;
-
-const Socials = styled.div`
-  margin-top: 16px;
-  .largeIcons {
-    width: 45px;
-    height: 45px;
-    padding: 6px;
-    color: white;
-  }
-
-  .largeIcons:hover {
-    transition: color 0.5s;
-    color: #ca6000;
-  }
 `;

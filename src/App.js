@@ -3,6 +3,8 @@ import styled from "styled-components";
 import About from "./components/About";
 import Resume from "./components/Resume";
 import Works from "./components/Works";
+import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -11,6 +13,8 @@ function App() {
       <About />
       <Resume />
       <Works />
+      <Contact />
+      <Footer />
     </Container>
   );
 }

@@ -8,7 +8,7 @@ const Navbar = () => {
       <NavItem href={"#about"}>About</NavItem>
       <NavItem href={"#resume"}>Resume</NavItem>
       <NavItem href={"#projects"}>Projects</NavItem>
-      <NavItem href={"#testimonals"}>Testimonals</NavItem>
+      {/* <NavItem href={"#testimonals"}>Testimonals</NavItem> */}
       <NavItem href={"#contact"}>Contact</NavItem>
     </Container>
   );
@@ -32,6 +32,6 @@ const NavItem = styled.a`
   cursor: pointer;
   :hover {
     transition: color 0.5s;
-    color: #ca6000;
+    color: #2196f3;
   }
 `;
