@@ -46,12 +46,12 @@ const Container = styled.div`
   background-color: #2b2b2b;
   color: white;
   display: flex;
+  align-items: center;
 `;
 
 const LeftContainer = styled.div`
   flex: 0.3;
   display: flex;
-  align-items: center;
   justify-content: flex-end;
 `;
 const RightContainer = styled.div`
@@ -74,7 +74,7 @@ const Image = styled.img`
   height: 180px;
   border-radius: 50%;
   object-fit: cover;
-  margin: 0 25px 50px 0;
+  margin: -90px 120px 50px 0;
 `;
 
 const AboutMe = styled.div`

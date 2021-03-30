@@ -61,6 +61,7 @@ const Container = styled.div`
   display: flex;
   color: white;
   flex-direction: column;
+  opacity: 0.9;
 `;
 
 const Content = styled.div`
