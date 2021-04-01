@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import Socials from "./Socials";
-import resume from "../resume";
+import Socials from "../Socials/Socials";
+import resume from "../../resume";
 
 const Footer = () => {
   return (

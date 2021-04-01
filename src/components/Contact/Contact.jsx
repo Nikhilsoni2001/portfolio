@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-import { db } from "../firebase";
+import { db } from "../../firebase";
 import SmartphoneIcon from "@material-ui/icons/Smartphone";
 
 const Contact = () => {
@@ -29,7 +29,7 @@ const Contact = () => {
   };
 
   return (
-    <Container>
+    <Container id="contact">
       <Title>
         Contact us <SmartphoneIcon fontSize="large" />
       </Title>

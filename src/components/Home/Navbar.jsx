@@ -32,6 +32,6 @@ const NavItem = styled.a`
   cursor: pointer;
   :hover {
     transition: color 0.5s;
-    color: #2196f3;
+    color: #f06000;
   }
 `;

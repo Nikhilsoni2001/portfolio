@@ -1,10 +1,10 @@
-import Home from "./components/Home";
+import Home from "./components/Home/Home";
 import styled from "styled-components";
-import About from "./components/About";
-import Resume from "./components/Resume";
-import Works from "./components/Works";
-import Contact from "./components/Contact";
-import Footer from "./components/Footer";
+import About from "./components/About/About";
+import Resume from "./components/Resume/Resume";
+import Works from "./components/Projects/Works";
+import Contact from "./components/Contact/Contact";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   return (

@@ -1,12 +1,12 @@
 import React from "react";
 import styled from "styled-components";
-import pic from "../assets/images/pic.jfif";
-import resume from "../resume";
+import pic from "../../assets/images/pic.jfif";
+import resume from "../../resume";
 import GetAppIcon from "@material-ui/icons/GetApp";
 
 const About = () => {
   return (
-    <Container>
+    <Container id="about">
       <LeftContainer>
         <Image src={pic}></Image>
       </LeftContainer>
@@ -18,6 +18,7 @@ const About = () => {
             <Content>{resume.aboutMe}</Content>
           </AboutMe>
         </TopContainer>
+
         <BottomContainer>
           <ContactDetailsContainer>
             <Heading>Contact Details</Heading>
@@ -28,7 +29,7 @@ const About = () => {
             <Content>nsoni19012001@gmail.com</Content>
           </ContactDetailsContainer>
           <ButtonContainer>
-            <Button>
+            <Button href={resume.resumeLink} target="_blank">
               <GetAppIcon className={"largeIcons"} />
               <ButtonText>Download Resume</ButtonText>
             </Button>
@@ -42,11 +43,12 @@ const About = () => {
 export default About;
 
 const Container = styled.div`
-  height: 70vh;
-  background-color: #2b2b2b;
-  color: white;
   display: flex;
   align-items: center;
+  padding-top: 98px;
+  padding-bottom: 98px;
+  background-color: #2b2b2b;
+  color: white;
 `;
 
 const LeftContainer = styled.div`
@@ -64,6 +66,7 @@ const TopContainer = styled.div`
   flex: 0.35;
   display: flex;
   align-items: center;
+  margin-bottom: 20px;
 `;
 const BottomContainer = styled.div`
   flex: 0.65;
@@ -99,7 +102,7 @@ const ButtonContainer = styled.div`
   width: 20px;
 `;
 
-const Button = styled.div`
+const Button = styled.a`
   background-color: #444;
   height: 50px;
   width: 200px;
@@ -108,6 +111,9 @@ const Button = styled.div`
   justify-content: center;
   margin-top: 80px;
   padding: 4px;
+  border-radius: 4px;
+  color: white;
+  text-decoration: none;
   .largeIcons {
     width: 25px;
     height: 25px;

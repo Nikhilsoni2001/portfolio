@@ -19,6 +19,6 @@ const Container = styled.div`
 const Title = styled.h2`
   color: #313131;
   text-transform: uppercase;
-  letter-spacing: 8px;
-  margin: 0px 0 8px 0;
+  letter-spacing: 7px;
+  margin: 0px 0 18px 0;
 `;

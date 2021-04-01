@@ -1,36 +1,37 @@
 import React from "react";
 import styled from "styled-components";
+import ProgressBar from "./ProgressBar";
+import resume from "../../resume";
 
-const ResumeItem = ({ title, heading, course, duration }) => {
+const createSkills = (skill) => {
+  console.log(skill);
+  return <ProgressBar name={skill.name} percentage={skill.percentage} />;
+};
+
+const Skills = () => {
   return (
     <Container>
       <LeftContainer>
-        <Title>{title}</Title>
+        <Title>Skills</Title>
       </LeftContainer>
-      <RightContainer>
-        <Heading>{heading}</Heading>
-        <Description>
-          <span>{course}</span> <span>•</span> {duration}
-        </Description>
-      </RightContainer>
+      <RightContainer>{resume.skills.map(createSkills)}</RightContainer>
     </Container>
   );
 };
 
-export default ResumeItem;
+export default Skills;
 
 const Container = styled.div`
-  height: 40vh;
   width: 70vw;
   display: flex;
-  border-bottom: 1px solid #e8e8e8;
+  padding-top: 98px;
+  padding-bottom: 98px;
 `;
 
 const LeftContainer = styled.div`
   flex: 0.3;
   display: flex;
-  // justify  -content: flex-end;
-  align-items: center;
+  align-items: flex-start;
 `;
 const RightContainer = styled.div`
   flex: 0.3;
@@ -40,9 +41,6 @@ const RightContainer = styled.div`
   justify-content: center;
   flex: 0.7;
 `;
-const Heading = styled.h1`
-  margin-bottom: 4px;
-`;
 const Title = styled.h2`
   font-size: 1.5rem;
   letter-spacing: 2px;
@@ -51,14 +49,8 @@ const Title = styled.h2`
   padding-top: 20px;
   padding-bottom: 8px;
   border-bottom: 3px solid #11abb0;
-`;
-const Description = styled.p`
-  font-size: 1.2rem;
-  margin-top: 8px;
-  color: #6e7881;
-  span {
-    padding-left: 5px;
-    padding-right: 5px;
-    font-style: italic;
+  :hover {
+    transition: all 0.2s;
+    padding-bottom: 12px;
   }
 `;
