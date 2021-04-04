@@ -28,12 +28,12 @@ const About = () => {
             <Content>+91-8699333207</Content>
             <Content>nsoni19012001@gmail.com</Content>
           </ContactDetailsContainer>
-          <ButtonContainer>
+          {/* <ButtonContainer>
             <Button href={resume.resumeLink} target="_blank">
               <GetAppIcon className={"largeIcons"} />
               <ButtonText>Download Resume</ButtonText>
             </Button>
-          </ButtonContainer>
+          </ButtonContainer> */}
         </BottomContainer>
       </RightContainer>
     </Container>

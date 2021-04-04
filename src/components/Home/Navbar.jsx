@@ -1,36 +1,116 @@
 import React from "react";
 import styled from "styled-components";
+import MenuIcon from "@material-ui/icons/Menu";
+import { Link as LinkS } from "react-scroll";
 
-const Navbar = () => {
+const Navbar = ({ toggle }) => {
   return (
-    <Container>
-      <NavItem href={"#home"}>Home</NavItem>
-      <NavItem href={"#about"}>About</NavItem>
-      <NavItem href={"#resume"}>Resume</NavItem>
-      <NavItem href={"#projects"}>Projects</NavItem>
-      {/* <NavItem href={"#testimonals"}>Testimonals</NavItem> */}
-      <NavItem href={"#contact"}>Contact</NavItem>
-    </Container>
+    <Nav>
+      <NavbarContainer>
+        <NavMenu>
+          <NavItem>
+            <NavLinks to="home"> Home</NavLinks>
+          </NavItem>
+
+          <NavItem>
+            <NavLinks to="about"> About</NavLinks>
+          </NavItem>
+
+          <NavItem>
+            <NavLinks to="resume"> Resume</NavLinks>
+          </NavItem>
+
+          <NavItem>
+            <NavLinks to="projects"> Projects</NavLinks>
+          </NavItem>
+
+          <NavItem>
+            <NavLinks to="contact"> Contact</NavLinks>
+          </NavItem>
+        </NavMenu>
+
+        <Hamburger onClick={toggle}>
+          <MenuIcon fontSize="large" />
+        </Hamburger>
+      </NavbarContainer>
+    </Nav>
   );
 };
 
 export default Navbar;
 
-const Container = styled.div`
+const Nav = styled.nav`
+  height: 80px;
   display: flex;
   justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  position: sticky;
+  top: 0;
+  width: 100%;
+
+  @media screen and (max-width: 960px) {
+    transition: 0.8s all ease;
+  }
 `;
 
-const NavItem = styled.a`
-  margin: 12px;
-  text-transform: uppercase;
-  font-size: 18px;
-  font-weight: 800;
-  letter-spacing: 3px;
+const NavbarContainer = styled.div`
+  display: flex;
+  height: 80px;
+  z-index: 1;
+  width: 100%;
+  padding: 0 24px;
+  max-width: 1100px;
+`;
+
+const Hamburger = styled.div`
+  display: none;
+
+  @media screen and (max-width: 768px) {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: #fff;
+    transform: translate(-100%, 60%);
+  }
+`;
+
+const NavMenu = styled.ul`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  text-align: center;
+  margin-right: -22px;
+  height: 80px;
+  width: 100%;
+
+  @media screen and (max-width: 786px) {
+    display: none;
+  }
+`;
+
+const NavItem = styled.li`
+  height: 60px;
+`;
+
+const NavLinks = styled(LinkS)`
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
   text-decoration: none;
-  color: white;
+  padding: 0 1rem;
+  height: 100%;
   cursor: pointer;
-  :hover {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+
+  &:hover {
     transition: color 0.5s;
     color: #f06000;
   }
