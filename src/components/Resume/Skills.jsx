@@ -26,20 +26,33 @@ const Container = styled.div`
   display: flex;
   padding-top: 98px;
   padding-bottom: 98px;
+
+  @media screen and (max-width: 600px) {
+    width: 100%;
+    flex-direction: column;
+  }
 `;
 
 const LeftContainer = styled.div`
   flex: 0.3;
   display: flex;
   align-items: flex-start;
+
+  @media screen and (max-width: 600px) {
+    flex: 1;
+    justify-content: center;
+  }
 `;
 const RightContainer = styled.div`
-  flex: 0.3;
   padding: 0 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   flex: 0.7;
+
+  @media screen and (max-width: 600px) {
+    flex: 1;
+  }
 `;
 const Title = styled.h2`
   font-size: 1.5rem;
@@ -52,5 +65,9 @@ const Title = styled.h2`
   :hover {
     transition: all 0.2s;
     padding-bottom: 12px;
+  }
+
+  @media screen and (max-width: 600px) {
+    margin: 0 0 1.2rem 0;
   }
 `;

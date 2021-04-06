@@ -15,10 +15,18 @@ export default ProgressBar;
 
 const Container = styled.div`
   margin-bottom: 40px;
+
+  @media screen and (max-width: 600px) {
+    margin: 1.5rem 0;
+  }
 `;
 const Title = styled.h2`
   color: #313131;
   text-transform: uppercase;
   letter-spacing: 7px;
   margin: 0px 0 18px 0;
+
+  @media screen and (max-width: 600px) {
+    font-size: 1.2rem;
+  }
 `;

@@ -39,7 +39,7 @@ const resume = {
     {
       name: "Work",
       heading: "Knowtech PVT LTD",
-      position: "Android Developer Intern",
+      course: "Android Developer Intern",
       duration: "Sept 2020 - Nov 2020",
     },
   ],

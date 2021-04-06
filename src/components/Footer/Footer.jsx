@@ -25,8 +25,17 @@ const Container = styled.div`
   padding: 50px 250px;
   background-color: #0f0f0f;
   color: #303030;
+
+  @media screen and (max-width: 600px) {
+    width: 100%;
+    padding: 50px 0;
+  }
 `;
 
 const Copyright = styled.p`
   margin-top: 12px;
+
+  @media screen and (max-width: 600px) {
+    font-size: 0.8rem;
+  }
 `;

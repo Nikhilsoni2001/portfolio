@@ -41,6 +41,10 @@ const Container = styled.div`
 const Content = styled.div`
   display: flex;
   flex-direction: column;
+
+  @media screen and (max-width: 600px) {
+    width: 100%;
+  }
 `;
 
 const Heading = styled.h3`
@@ -48,6 +52,10 @@ const Heading = styled.h3`
   letter-spacing: 4px;
   color: #95a3a3;
   margin-bottom: 25px;
+
+  @media screen and (max-width: 600px) {
+    font-size: 0.8rem;
+  }
 `;
 
 const ProjectsContainer = styled.div`
@@ -55,4 +63,8 @@ const ProjectsContainer = styled.div`
   flex-wrap: wrap;
   align-items: center;
   justify-content: flex-start;
+
+  @media screen and (max-width: 600px) {
+    justify-content: center;
+  }
 `;

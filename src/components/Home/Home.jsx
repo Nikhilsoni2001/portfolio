@@ -58,10 +58,18 @@ const Headline = styled.h1`
   span {
     color: #f06000;
   }
+
+  @media screen and (max-width: 600px) {
+    font-size: 2rem;
+  }
 `;
 
 const AboutMe = styled.p`
   font-size: 2rem;
   text-align: center;
   margin-top: 16px;
+
+  @media screen and (max-width: 600px) {
+    font-size: 1rem;
+  }
 `;

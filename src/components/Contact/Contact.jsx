@@ -59,7 +59,7 @@ const Contact = () => {
           <TextArea
             placeholder="Message"
             rows="4"
-            cols="45"
+            cols="25"
             value={message}
             onChange={(e) => setMessage(e.target.value)}
           />
@@ -101,12 +101,20 @@ const Title = styled.h1`
   letter-spacing: 4px;
   display: flex;
   align-items: center;
+
+  @media screen and (max-width: 600px) {
+    font-size: 1.5rem;
+  }
 `;
 const Label = styled.h2`
   font-size: 1.2rem;
   margin-right: 12px;
   text-transform: uppercase;
   letter-spacing: 2px;
+
+  @media screen and (max-width: 600px) {
+    font-size: 1rem;
+  }
 `;
 const TextArea = styled.textarea`
   border-radius: 5px;
@@ -121,6 +129,10 @@ const Input = styled.input`
   border: 1px solid #edeeee;
   outline: none;
   padding: 4px;
+
+  @media screen and (max-width: 600px) {
+    width: 200px;
+  }
 `;
 const SubmitButton = styled.button`
   margin-top: 32px;
@@ -137,5 +149,11 @@ const SubmitButton = styled.button`
     transition: all 0.6s;
     background-color: white;
     color: black;
+  }
+
+  @media screen and (max-width: 600px) {
+    font-size: 1rem;
+    width: 95px;
+    height: 40px;
   }
 `;

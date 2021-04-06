@@ -31,6 +31,12 @@ const Container = styled.div`
     transition: all 1s;
     box-shadow: 6px 10px 9px -2px rgba(0, 0, 0, 0.76);
   }
+
+  @media screen and (max-width: 600px) {
+    width: 100%;
+    margin: 18px 24px;
+    justify-content: center;
+  }
 `;
 
 const Heading = styled.h3`
@@ -39,6 +45,10 @@ const Heading = styled.h3`
   color: #212121;
   text-transform: uppercase;
   letter-spacing: 1.2px;
+
+  @media screen and (max-width: 600px) {
+    font-size: 1.5rem;
+  }
 `;
 
 const Description = styled.p`
@@ -46,6 +56,10 @@ const Description = styled.p`
   color: #757575;
   text-align: justify;
   padding: 8px;
+
+  @media screen and (max-width: 600px) {
+    font-size: 1rem;
+  }
 `;
 
 const Link = styled.a`

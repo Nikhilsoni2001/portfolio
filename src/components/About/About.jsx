@@ -28,12 +28,12 @@ const About = () => {
             <Content>+91-8699333207</Content>
             <Content>nsoni19012001@gmail.com</Content>
           </ContactDetailsContainer>
-          {/* <ButtonContainer>
+          <ButtonContainer>
             <Button href={resume.resumeLink} target="_blank">
               <GetAppIcon className={"largeIcons"} />
               <ButtonText>Download Resume</ButtonText>
             </Button>
-          </ButtonContainer> */}
+          </ButtonContainer>
         </BottomContainer>
       </RightContainer>
     </Container>
@@ -55,11 +55,20 @@ const LeftContainer = styled.div`
   flex: 0.3;
   display: flex;
   justify-content: flex-end;
+
+  @media screen and (max-width: 600px) {
+    display: none;
+  }
 `;
 const RightContainer = styled.div`
   flex: 0.7;
   display: flex;
   flex-direction: column;
+
+  @media screen and (max-width: 600px) {
+    padding: 0 1.2rem;
+    flex: 1;
+  }
 `;
 const TopContainer = styled.div`
   width: 70%;
@@ -67,10 +76,21 @@ const TopContainer = styled.div`
   display: flex;
   align-items: center;
   margin-bottom: 20px;
+
+  @media screen and (max-width: 600px) {
+    width: 100%;
+    flex: 1;
+  }
 `;
 const BottomContainer = styled.div`
   flex: 0.65;
   display: flex;
+
+  @media screen and (max-width: 600px) {
+    width: 100%;
+    flex: 1;
+    flex-direction: column;
+  }
 `;
 const Image = styled.img`
   width: 180px;
@@ -86,20 +106,35 @@ const AboutMe = styled.div`
 const Heading = styled.h3`
   font-size: 1.5rem;
 `;
+
 const Content = styled.p`
   margin-top: 12px;
   font-size: 1.2rem;
   text-align: justify;
   color: #7a7a7a;
+
+  @media screen and (max-width: 600px) {
+    font-size: 1rem;
+  }
 `;
+
 const ContactDetailsContainer = styled.div`
   flex: 0.4;
   padding: 5px;
+
+  @media screen and (max-width: 600px) {
+    flex: 1;
+  }
 `;
 const ButtonContainer = styled.div`
   flex: 0.6;
   display: flex;
   width: 20px;
+
+  @media screen and (max-width: 600px) {
+    width: 100%;
+    flex: 1;
+  }
 `;
 
 const Button = styled.a`
@@ -125,6 +160,11 @@ const Button = styled.a`
     transition: all 0.8s;
     background-color: white;
     color: black;
+  }
+
+  @media screen and (max-width: 600px) {
+    width: 100%;
+    margin-top: 3rem;
   }
 `;
 
