@@ -59,6 +59,14 @@ const Headline = styled.h1`
     color: #f06000;
   }
 
+  @media screen and (max-width: 1200px) {
+    font-size: 4rem;
+  }
+
+  @media screen and (max-width: 768px) {
+    font-size: 3rem;
+  }
+
   @media screen and (max-width: 600px) {
     font-size: 2rem;
   }
@@ -68,6 +76,14 @@ const AboutMe = styled.p`
   font-size: 2rem;
   text-align: center;
   margin-top: 16px;
+
+  @media screen and (max-width: 1200px) {
+    font-size: 1.5rem;
+  }
+
+  @media screen and (max-width: 768px) {
+    font-size: 1.2rem;
+  }
 
   @media screen and (max-width: 600px) {
     font-size: 1rem;

@@ -16,7 +16,7 @@ export default ProgressBar;
 const Container = styled.div`
   margin-bottom: 40px;
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 768px) {
     margin: 1.5rem 0;
   }
 `;
@@ -26,7 +26,7 @@ const Title = styled.h2`
   letter-spacing: 7px;
   margin: 0px 0 18px 0;
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 1200px) {
     font-size: 1.2rem;
   }
 `;

@@ -49,6 +49,14 @@ const Container = styled.div`
   padding-bottom: 98px;
   background-color: #2b2b2b;
   color: white;
+
+  @media screen and (max-width: 768px) {
+    padding: 95px;
+  }
+
+  @media screen and (max-width: 600px) {
+    padding: 95px 20px;
+  }
 `;
 
 const LeftContainer = styled.div`
@@ -56,7 +64,7 @@ const LeftContainer = styled.div`
   display: flex;
   justify-content: flex-end;
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 768px) {
     display: none;
   }
 `;
@@ -65,7 +73,7 @@ const RightContainer = styled.div`
   display: flex;
   flex-direction: column;
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 768px) {
     padding: 0 1.2rem;
     flex: 1;
   }
@@ -77,7 +85,7 @@ const TopContainer = styled.div`
   align-items: center;
   margin-bottom: 20px;
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 768px) {
     width: 100%;
     flex: 1;
   }
@@ -86,7 +94,7 @@ const BottomContainer = styled.div`
   flex: 0.65;
   display: flex;
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 768px) {
     width: 100%;
     flex: 1;
     flex-direction: column;
@@ -98,6 +106,16 @@ const Image = styled.img`
   border-radius: 50%;
   object-fit: cover;
   margin: -90px 120px 50px 0;
+
+  @media screen and (max-width: 1200px) {
+    width: 150px;
+    height: 150px;
+  }
+
+  @media screen and (max-width: 991px) {
+    width: 120px;
+    height: 120px;
+  }
 `;
 
 const AboutMe = styled.div`
@@ -113,7 +131,7 @@ const Content = styled.p`
   text-align: justify;
   color: #7a7a7a;
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 991px) {
     font-size: 1rem;
   }
 `;
@@ -122,7 +140,7 @@ const ContactDetailsContainer = styled.div`
   flex: 0.4;
   padding: 5px;
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 768px) {
     flex: 1;
   }
 `;
@@ -131,7 +149,7 @@ const ButtonContainer = styled.div`
   display: flex;
   width: 20px;
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 768px) {
     width: 100%;
     flex: 1;
   }
@@ -162,7 +180,16 @@ const Button = styled.a`
     color: black;
   }
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 1200px) {
+    height: 45px;
+    width: 150px;
+    .largeIcons {
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
     width: 100%;
     margin-top: 3rem;
   }
@@ -173,4 +200,8 @@ const ButtonText = styled.span`
   font-weight: 700;
   mergin-left: 5px;
   text-align: center;
+
+  @media screen and (max-width: 1200px) {
+    font-size: 0.8rem;
+  }
 `;

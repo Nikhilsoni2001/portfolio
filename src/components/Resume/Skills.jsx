@@ -27,9 +27,14 @@ const Container = styled.div`
   padding-top: 98px;
   padding-bottom: 98px;
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 768px) {
     width: 100%;
     flex-direction: column;
+    padding: 95px;
+  }
+
+  @media screen and (max-width: 600px) {
+    padding: 95px 20px;
   }
 `;
 
@@ -38,7 +43,7 @@ const LeftContainer = styled.div`
   display: flex;
   align-items: flex-start;
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 768px) {
     flex: 1;
     justify-content: center;
   }
@@ -50,7 +55,7 @@ const RightContainer = styled.div`
   justify-content: center;
   flex: 0.7;
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 768px) {
     flex: 1;
   }
 `;
@@ -67,7 +72,11 @@ const Title = styled.h2`
     padding-bottom: 12px;
   }
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 1200px) {
+    font-size: 1.4rem;
+  }
+
+  @media screen and (max-width: 768px) {
     margin: 0 0 1.2rem 0;
   }
 `;

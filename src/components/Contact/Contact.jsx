@@ -102,7 +102,11 @@ const Title = styled.h1`
   display: flex;
   align-items: center;
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 1200px) {
+    font-size: 1.8rem;
+  }
+
+  @media screen and (max-width: 768px) {
     font-size: 1.5rem;
   }
 `;
@@ -112,7 +116,7 @@ const Label = styled.h2`
   text-transform: uppercase;
   letter-spacing: 2px;
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 1200px) {
     font-size: 1rem;
   }
 `;
@@ -130,7 +134,7 @@ const Input = styled.input`
   outline: none;
   padding: 4px;
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 768px) {
     width: 200px;
   }
 `;
@@ -151,7 +155,7 @@ const SubmitButton = styled.button`
     color: black;
   }
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 768px) {
     font-size: 1rem;
     width: 95px;
     height: 40px;

@@ -29,4 +29,11 @@ const Container = styled.div`
     transition: color 0.5s;
     color: #f06000;
   }
+
+  @media screen and (max-width: 768px) {
+    .largeIcons {
+      width: 40px;
+      height: 40px;
+    }
+  }
 `;

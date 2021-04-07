@@ -53,6 +53,10 @@ const Heading = styled.h3`
   color: #95a3a3;
   margin-bottom: 25px;
 
+  @media screen and (max-width: 1200px) {
+    font-size: 1rem;
+  }
+
   @media screen and (max-width: 600px) {
     font-size: 0.8rem;
   }
@@ -62,7 +66,7 @@ const ProjectsContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
 
   @media screen and (max-width: 600px) {
     justify-content: center;

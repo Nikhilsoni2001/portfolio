@@ -46,7 +46,7 @@ const Heading = styled.h3`
   text-transform: uppercase;
   letter-spacing: 1.2px;
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 1200px) {
     font-size: 1.5rem;
   }
 `;
@@ -57,7 +57,7 @@ const Description = styled.p`
   text-align: justify;
   padding: 8px;
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 1200px) {
     font-size: 1rem;
   }
 `;

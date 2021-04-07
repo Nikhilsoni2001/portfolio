@@ -114,4 +114,8 @@ const NavLinks = styled(LinkS)`
     transition: color 0.5s;
     color: #f06000;
   }
+
+  @media screen and (max-width: 1200px) {
+    font-size: 1rem;
+  }
 `;

@@ -26,7 +26,7 @@ const Container = styled.div`
   width: 70vw;
   border-bottom: 1px solid #e8e8e8;
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 768px) {
     flex-direction: column;
     width: 100%;
     align-items: center;
@@ -38,7 +38,7 @@ const LeftContainer = styled.div`
   display: flex;
   align-items: center;
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 768px) {
     flex: 1;
   }
 `;
@@ -63,16 +63,23 @@ const Title = styled.h2`
     padding-bottom: 12px;
   }
 
-  @media screen and (max-width: 600px) {
-    margin: 0 0 1.2rem 0;
+  @media screen and (max-width: 1200px) {
+    font-size: 1.4rem;
   }
+
+  @media screen and (max-width: 768px) {
+    margin: 0 0 1.2rem 0;
+4}
 `;
 
 const Heading = styled.h1`
   margin: 1rem 0;
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 1200px) {
     font-size: 1.5rem;
+  }
+
+  @media screen and (max-width: 768px) {
     text-align: center;
   }
 `;
@@ -87,8 +94,11 @@ const Description = styled.p`
     font-style: italic;
   }
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 1200px) {
     font-size: 1rem;
+  }
+
+  @media screen and (max-width: 768px) {
     text-align: center;
   }
 `;
