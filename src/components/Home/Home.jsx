@@ -68,7 +68,7 @@ const Headline = styled.h1`
   }
 
   @media screen and (max-width: 600px) {
-    font-size: 2rem;
+    font-size: 1.9rem;
   }
 `;
 

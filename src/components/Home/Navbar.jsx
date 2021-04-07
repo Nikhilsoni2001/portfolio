@@ -9,23 +9,63 @@ const Navbar = ({ toggle }) => {
       <NavbarContainer>
         <NavMenu>
           <NavItem>
-            <NavLinks to="home"> Home</NavLinks>
+            <NavLinks
+              to="home"
+              smooth={true}
+              duration={500}
+              spy={true}
+              exact="true"
+            >
+              Home
+            </NavLinks>
           </NavItem>
 
           <NavItem>
-            <NavLinks to="about"> About</NavLinks>
+            <NavLinks
+              to="about"
+              smooth={true}
+              duration={500}
+              spy={true}
+              exact="true"
+            >
+              About
+            </NavLinks>
           </NavItem>
 
           <NavItem>
-            <NavLinks to="resume"> Resume</NavLinks>
+            <NavLinks
+              to="resume"
+              smooth={true}
+              duration={500}
+              spy={true}
+              exact="true"
+            >
+              Resume
+            </NavLinks>
           </NavItem>
 
           <NavItem>
-            <NavLinks to="projects"> Projects</NavLinks>
+            <NavLinks
+              to="projects"
+              smooth={true}
+              duration={500}
+              spy={true}
+              exact="true"
+            >
+              Projects
+            </NavLinks>
           </NavItem>
 
           <NavItem>
-            <NavLinks to="contact"> Contact</NavLinks>
+            <NavLinks
+              to="contact"
+              smooth={true}
+              duration={500}
+              spy={true}
+              exact="true"
+            >
+              Contact
+            </NavLinks>
           </NavItem>
         </NavMenu>
 
@@ -45,7 +85,7 @@ const Nav = styled.nav`
   justify-content: center;
   align-items: center;
   font-size: 1rem;
-  position: sticky;
+  // position: sticky;
   top: 0;
   width: 100%;
 
@@ -88,7 +128,7 @@ const NavMenu = styled.ul`
   height: 80px;
   width: 100%;
 
-  @media screen and (max-width: 786px) {
+  @media screen and (max-width: 768px) {
     display: none;
   }
 `;
