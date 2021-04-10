@@ -147,7 +147,6 @@ const ContactDetailsContainer = styled.div`
 const ButtonContainer = styled.div`
   flex: 0.6;
   display: flex;
-  width: 20px;
 
   @media screen and (max-width: 768px) {
     width: 100%;
@@ -157,14 +156,14 @@ const ButtonContainer = styled.div`
 
 const Button = styled.a`
   background-color: #444;
-  height: 50px;
-  width: 200px;
+  height: 55px;
+  width: 220px;
   display: flex;
   align-items: center;
   justify-content: center;
   margin-top: 80px;
   padding: 4px;
-  border-radius: 4px;
+  border-radius: 6px;
   color: white;
   text-decoration: none;
   .largeIcons {
@@ -181,11 +180,11 @@ const Button = styled.a`
   }
 
   @media screen and (max-width: 1200px) {
-    height: 45px;
-    width: 150px;
+    height: 50px;
+    width: 170px;
     .largeIcons {
-      width: 20px;
-      height: 20px;
+      width: 22px;
+      height: 22px;
     }
   }
 
@@ -196,12 +195,12 @@ const Button = styled.a`
 `;
 
 const ButtonText = styled.span`
-  font-size: 18px;
+  font-size: 1.1rem;
   font-weight: 700;
   mergin-left: 5px;
   text-align: center;
 
   @media screen and (max-width: 1200px) {
-    font-size: 0.8rem;
+    font-size: 0.85rem;
   }
 `;

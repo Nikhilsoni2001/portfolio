@@ -8,9 +8,7 @@ const Footer = () => {
     <Container>
       <Socials />
 
-      <Copyright>
-        Made with love by the {resume.name} team ♥️ &copy; 2021
-      </Copyright>
+      <Copyright>Made with love by the {resume.name} ♥️ &copy; 2021</Copyright>
     </Container>
   );
 };

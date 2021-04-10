@@ -31,7 +31,7 @@ const Contact = () => {
   return (
     <Container id="contact">
       <Title>
-        Contact us <SmartphoneIcon fontSize="large" />
+        Contact me <SmartphoneIcon fontSize="large" />
       </Title>
       <Form className="form">
         <Row>
@@ -124,7 +124,7 @@ const TextArea = styled.textarea`
   border-radius: 5px;
   border: 1px solid #edeeee;
   outline: none;
-  padding: 4px;
+  padding: 14px 6px;
 `;
 const Input = styled.input`
   height: 30px;
@@ -132,7 +132,7 @@ const Input = styled.input`
   border-radius: 5px;
   border: 1px solid #edeeee;
   outline: none;
-  padding: 4px;
+  padding: 18px 6px;
 
   @media screen and (max-width: 768px) {
     width: 200px;

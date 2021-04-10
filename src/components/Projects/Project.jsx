@@ -40,7 +40,7 @@ const Container = styled.div`
 `;
 
 const Heading = styled.h3`
-  font-size: 1.8rem;
+  font-size: 1.7rem;
   margin-top: 8px;
   color: #212121;
   text-transform: uppercase;
@@ -52,7 +52,7 @@ const Heading = styled.h3`
 `;
 
 const Description = styled.p`
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   color: #757575;
   text-align: justify;
   padding: 8px;
