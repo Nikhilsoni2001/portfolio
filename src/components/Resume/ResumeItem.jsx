@@ -1,14 +1,23 @@
 import React from "react";
 import styled from "styled-components";
+import AttachmentIcon from "@material-ui/icons/Attachment";
 
-const ResumeItem = ({ title, heading, course, duration }) => {
+const ResumeItem = ({ title, heading, course, duration, link }) => {
   return (
     <Container>
       <LeftContainer>
         <Title>{title}</Title>
       </LeftContainer>
       <RightContainer>
-        <Heading>{heading}</Heading>
+        <Heading>
+          {heading}{" "}
+          {link && (
+            <Button href={link} target="_blank">
+              <AttachmentIcon />
+            </Button>
+          )}
+        </Heading>
+
         <Description>
           <span>{course}</span> <span>•</span> {duration}
         </Description>
@@ -74,6 +83,7 @@ const Title = styled.h2`
 
 const Heading = styled.h1`
   margin: 1rem 0;
+  display: flex;
 
   @media screen and (max-width: 1200px) {
     font-size: 1.5rem;
@@ -81,6 +91,7 @@ const Heading = styled.h1`
 
   @media screen and (max-width: 768px) {
     text-align: center;
+    justify-content: center;
   }
 `;
 
@@ -100,5 +111,19 @@ const Description = styled.p`
 
   @media screen and (max-width: 768px) {
     text-align: center;
+  }
+`;
+
+const Button = styled.a`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 0.5rem;
+  color: #6e7881;
+  text-decoration: none;
+
+  :hover {
+    transition: all 0.8s;
+    color: black;
   }
 `;

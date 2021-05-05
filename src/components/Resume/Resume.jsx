@@ -11,6 +11,7 @@ const getResumeContent = (resumeItem) => {
       heading={resumeItem.heading}
       course={resumeItem.course}
       duration={resumeItem.duration}
+      link={resumeItem.link}
     />
   );
 };

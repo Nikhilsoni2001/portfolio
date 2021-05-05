@@ -38,9 +38,11 @@ const resume = {
     },
     {
       name: "Work",
-      heading: "Knowtech PVT LTD",
+      heading: "Knowtech",
       course: "Android Developer Intern",
       duration: "Sept 2020 - Nov 2020",
+      link:
+        "https://drive.google.com/file/d/1Dv8faYzYBvWm6BUfUNg6VoRCcTdSgrPE/view?usp=sharing",
     },
   ],
   skills: [
@@ -101,12 +103,6 @@ const resume = {
       link: "https://frozen-ridge-31250.herokuapp.com/",
     },
     {
-      name: "Amazon-Clone",
-      description:
-        "This is a clone Web-App of amazon developed in ReactJS. Firebase Authentication is used for the authentication of Users and Firestore is used to store userData. Heroku deployment is used for deplyoment",
-      link: "https://obscure-mesa-74789.herokuapp.com/",
-    },
-    {
       name: "Expense Manager",
       description:
         "Used to handle expenses. One can add the amount and its source and their net profit/loss will be displayed. This app is made with Room Database, Coroutines, viewModel, Material Design, Chart Library, Navigation Components.",
@@ -117,6 +113,12 @@ const resume = {
       description:
         "A secure Notes taking app that lets one authenticate and save their notes. They have the option to switch to Dark Mode. The data is locally saved in Room and automatically syncs when the internet is available.",
       link: "https://github.com/Nikhilsoni2001/KT-Notes",
+    },
+    {
+      name: "Amazon-Clone",
+      description:
+        "This is a clone Web-App of amazon developed in ReactJS. Firebase Authentication is used for the authentication of Users and Firestore is used to store userData. Heroku deployment is used for deplyoment",
+      link: "https://obscure-mesa-74789.herokuapp.com/",
     },
   ],
 };

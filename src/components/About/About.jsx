@@ -1,8 +1,8 @@
 import React from "react";
 import styled from "styled-components";
-import pic from "../../assets/images/pic.jfif";
+import pic from "../../assets/images/pic.png";
 import resume from "../../resume";
-import GetAppIcon from "@material-ui/icons/GetApp";
+import DescriptionIcon from "@material-ui/icons/Description";
 
 const About = () => {
   return (
@@ -30,8 +30,8 @@ const About = () => {
           </ContactDetailsContainer>
           <ButtonContainer>
             <Button href={resume.resumeLink} target="_blank">
-              <GetAppIcon className={"largeIcons"} />
-              <ButtonText>Download Resume</ButtonText>
+              <DescriptionIcon className={"largeIcons"} />
+              <ButtonText>View Resume</ButtonText>
             </Button>
           </ButtonContainer>
         </BottomContainer>
@@ -157,7 +157,7 @@ const ButtonContainer = styled.div`
 const Button = styled.a`
   background-color: #444;
   height: 55px;
-  width: 220px;
+  width: 200px;
   display: flex;
   align-items: center;
   justify-content: center;
